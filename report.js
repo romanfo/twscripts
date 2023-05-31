@@ -224,4 +224,10 @@ CriarRelatorioNotas = {
                 })), Dialog.close()
             }))
         }
+    },
+    start: function() {
+        this.verificarPagina() && (this.initDadosScript(), this.getTipoAldeia(), this.escreveNota())
     }
+}, initTranslations() ? CriarRelatorioNotas.start() : setTimeout((() => {
+    CriarRelatorioNotas.start();
+}), 3e3), $.getJSON("https://api.countapi.xyz/hit/xdamScripts/scriptCriarNotaRelatorio");
