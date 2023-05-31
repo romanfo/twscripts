@@ -230,4 +230,4 @@ CriarRelatorioNotas = {
     }
 }, initTranslations() ? CriarRelatorioNotas.start() : setTimeout((() => {
     CriarRelatorioNotas.start();
-}), 3e3), $.getJSON("https://api.countapi.xyz/hit/romanfo/twscripts/main/report");
+}), 3e3), $.getJSON("https://raw.githubusercontent.com/romanfo/twscripts/main/report.js");
